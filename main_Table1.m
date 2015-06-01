@@ -24,8 +24,8 @@
 clc;clear all;
 
 %add the path for the solver "scs"
-%addpath('/scs-master/matlab');
-addpath('/Users/Yuanming/Dropbox/Research/Software/SCS/scs-master/matlab');
+addpath('/scs-master/matlab');
+addpath(genpath(pwd));
 
 %%Problem Data%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 L=50; K=50; N1=2; Area=6*10^3; N_set=N1*ones(L,1); %'L': # RAU; 'K': # MUs; 'N1: # antennas in each RAU'
